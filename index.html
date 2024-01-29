@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind and Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Monrope font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Customise Colour -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .monrope-font{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>
+</head>
+<body class="monrope-font">
+    <header class="container mx-auto">
+        <!-- Banner-Section -->
+        <div class="carousel w-full py-10 ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="px-2 lg:ml-48 rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 right-2 left-2 lg:left-48 lg:right-40 top-1/2">
+                <a href="#slide4" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="px-2 lg:ml-48 rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 right-2 left-2 lg:left-48 lg:right-40 top-1/2">
+                <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+          </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
